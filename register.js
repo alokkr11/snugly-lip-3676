@@ -14,10 +14,15 @@ let register=()=>{
 
     
     if((checkEmail(email))===true){
+        alert("User register Succesfully")
+       
+        
+        window.location.href="./login.html"
         user_data.push(user);
 
     }else{
         alert("user already exist")
+        window.location.href="./login.html"
     }
     
     localStorage.setItem("user_data",JSON.stringify(user_data))

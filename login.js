@@ -1,4 +1,4 @@
-let user_data=JSON.parse(localStorage.getItem("user_data"))||[];
+let logindata=JSON.parse(localStorage.getItem("user_data"))||[];
 
 let login=()=>{
     let email=document.getElementById("email").value ;
@@ -8,6 +8,7 @@ let login=()=>{
 
 
     if((checkdetail(email,password))===true){
+        logindata.push(user)
         localStorage.setItem("login_user",JSON.stringify(user))
         alert(`User Login Successfully`)
         window.location.href="./index.html"
@@ -15,10 +16,13 @@ let login=()=>{
         alert("Invailed Email and Password")
     }
 
+    document.getElementById("email").value=null;
+    document.getElementById("password").value=null;
+
 }
 
 let checkdetail=(email,password)=>{
-    let filtered=user_data.filter((el)=>{
+    let filtered=logindata.filter((el)=>{
         return email==el.email && password==el.password
     })
     if(filtered.length>0){
@@ -26,4 +30,8 @@ let checkdetail=(email,password)=>{
     }else {
         return false
     }
+}
+
+let register=()=>{
+    window.location.href="./register.html"
 }
