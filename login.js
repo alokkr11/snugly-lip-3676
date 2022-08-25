@@ -6,7 +6,9 @@ let login=()=>{
     
     let user={email,password}
 
+
     if((checkdetail(email,password))===true){
+        localStorage.setItem("login_user",JSON.stringify(user))
         alert(`User Login Successfully`)
         window.location.href="./index.html"
     }else{
