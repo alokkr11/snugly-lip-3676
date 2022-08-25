@@ -67,6 +67,7 @@
               >notifications_none</i
             >
           </li>
+          <li  id="reed" style="width:20px;background-color:red;height:20px;margin-left:-20px;margin-top:7px;border-radius: 50%;font-size: 12px;text-align: center;color:azure;;">01</li>
           <li>
             <a href="#">for employers</a>
             <ul>
@@ -77,7 +78,7 @@
         </ul>
       </nav>
     </header>
-    <section class="search-section">
+  <section class="search-section">
       <div class="najrin">
         <div class="naj">
           <abbr title="All Jobs">All Jobs</abbr>
@@ -90,9 +91,13 @@
 
       <div id="search-input">
         <div id="search-job">
-         <input type="text" id="Skills" placeholder="Skills,Designations,Companies">
-         <input type="text" id="location" placeholder="Location/Locality"/>
-         <button id="search-data">Search</button>
+          <input
+            type="text"
+            id="Skills"
+            placeholder="Skills,Designations,Companies"
+          />
+          <input type="text" id="location" placeholder="Location/Locality" />
+          <button id="search-data">Search</button>
         </div>
         <div id="browse--by-jobs">
           <abbr title="All Jobs">All Jobs</abbr>
@@ -100,25 +105,246 @@
           <abbr title="Jobs By Category">Jobs By Category</abbr>
           <abbr title="Jobs By Location">Jobs By Location</abbr>
           <abbr title="Jobs By Designations">Jobs By Designations</abbr>
-           <abbr title="Jobs By skills">Jobs By skills</abbr>
+          <abbr title="Jobs By skills">Jobs By skills</abbr>
         </div>
         <div></div>
       </div>
     </section>
 
-
     <div class="browse-job-location">
-        <p>Browse Jobs by Locations</p>
-        <hr>
-        <div id="jobl">
-            <div>
-                 <abbr title="Jobs By Company"><img src="https://static.naukimg.com/s/4/103/i/browseLoc.png" alt=""></a></abbr>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+      <p>Browse Jobs by Locations</p>
+      <hr />
+      <div id="jobl">
+        <ul class="hoz">
+          <li>
+            <a
+              title="Jobs in Mumbai"
+              target="_blank"
+              href="https://www.naukri.com/jobs-in-mumbai"
+            >
+              <span class="mum"></span> Jobs in Mumbai
+            </a>
+          </li>
+          <li>
+            <a
+              title="Jobs in Delhi"
+              target="_blank"
+              href="https://www.naukri.com/jobs-in-delhi"
+            >
+              <span class="del"></span> Jobs in Delhi
+            </a>
+          </li>
+          <li>
+            <a
+              title="Jobs in Bangalore"
+              target="_blank"
+              href="https://www.naukri.com/jobs-in-bangalore"
+            >
+              <span class="ban"></span> Jobs in Bangalore
+            </a>
+          </li>
+          <li>
+            <a
+              title="Jobs in Hyderabad"
+              target="_blank"
+              href="https://www.naukri.com/jobs-in-hyderabad-secunderabad"
+            >
+              <span class="hyd"></span> Jobs in Hyderabad
+            </a>
+          </li>
+          <li>
+            <a
+              title="Jobs in Chennai"
+              target="_blank"
+              href="https://www.naukri.com/jobs-in-chennai"
+            >
+              <span class="chen"></span> Jobs in Chennai
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+    <div class="browsefuncarea">
+      <div>
+        <div id="browsefuncarea-first">
+          <p>Browse Jobs by Functional Areas</p>
         </div>
+        <div class="browsefuncarea-second">
+          <div>
+            <a title="Bank Jobs" href="#">Bank Jobs</a><br />
+            <a title="Data Entry Jobs" href="#">Data Entry Jobs</a><br />
+            <a title="HR Jobs" href="#">HR Jobs</a><br />
+            <a title="BPO Jobs" href="#">BPO Jobs</a><br />
+            <a title="Finance Jobs" href="#">Finance Jobs</a>
+          </div>
+          <div>
+            <a title="Teacher Jobs" href="#">Teacher Jobs</a><br />
+            <a title="Legal Jobs" href="#">Legal Job</a><br />
+            <a title="Marketing Jobs" href="#">Marketing Jobs</a><br />
+            <a title="Defence Jobs" href="#">Defence Jobs</a><br />
+            <a title="Internete Jobs" href="#">Internet Jobs</a>
+          </div>
+        </div>
+        <div class="browsefuncarea-last">
+          <a title="Veiw All Functional Areas" href="#"
+            >Veiw All Functional Areas</a
+          >
+        </div>
+      </div>
+      <!-- second div -->
+      <div>
+        <div id="browsefuncarea-first">
+          <p>Browse Jobs by Industries</p>
+        </div>
+        <div class="browsefuncarea-second">
+          <div>
+            <a title="Govt Jobs" href="#">Govt Jobs</a><br />
+            <a title="Railway Jobs" href="#">Railway Jobs</a><br />
+            <a title="Ngo Jobs" href="#">Ngo Jobs</a><br />
+            <a title="Pharma Jobs" href="#">Pharma Jobs</a><br />
+            <a title="IT Jobs" href="#">IT Jobs</a>
+          </div>
+          <div>
+            <a title="Agricultural Jobs" href="#">Agricultural Jobs</a><br />
+            <a title="Telecom Jobs" href="#">Telecom Job</a><br />
+            <a title="Shipping Jobs" href="#">Shipping Jobs</a><br />
+            <a title="Oil And Gas Jobs" href="#">Oil And Gas Jobs</a><br />
+            <a title="Aviation Jobs" href="#">Aviation Jobs</a>
+          </div>
+        </div>
+        <div class="browsefuncarea-last">
+          <a title="Veiw All Industries" href="#">Veiw All Industries</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Browse by compainis section -->
+    <div id="browse-by-comp">
+      <div class="browse-comp">
+         <p> Browse Jobs by Companies</p>
+      </div>
+      <div id="browsec">
+        <div>
+          <a title="Cognizant Jobs" href="#"><img src="https://img.naukimg.com/fc_images/v2/2114.gif" alt=""></a>
+          <p title="Cognizant Jobs" href="#">Cognizant</p>
+        </div>
+        <div>
+          <a title="TCS Jobs" href="#"><img src="https://img.naukimg.com/logo_images/v2/892542.gif" alt=""></a>
+          <p title="TCS Jobs" href="#">TCS</p>
+        </div>
+   
+       <div>
+          <a title="Wirpo Jobs" href="#"><img src="https://img.naukimg.com/logo_images/v2/1384.gif" alt=""></a>
+          <p title="Wirpo Jobs" href="#">Wirpo</p>
+        </div>
+       <div>
+          <a title="ICICI Bank Jobs" href="#"><img src="https://img.naukimg.com/logo_images/v2/10081.gif" alt=""></a>
+          <p title="ICICI Bank Jobs" href="#">ICICI Bank </p>
+        </div>
+
+
+             <div>
+          <a title="Intel Jobs" href="#"><img src="https://img.naukimg.com/logo_images/v2/11014.gif" alt=""></a>
+          <p title="Intel Jobs" href="#">Intel</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- browse section  -->
+        <div class="browsefuncarea">
+      <div>
+        <div id="browsefuncarea-first">
+          <p>Browse Jobs by Designations</p>
+        </div>
+        <div class="browsefuncarea-second">
+          <div>
+            <a title="Comapny Secretary Jobs" href="#">Comapny Secretary Jobs</a><br />
+            <a title="Business Analyst Jobs" href="#">Business Analyst Jobs</a><br />
+            <a title="Lecture Jobs" href="#">Lecture Jobs</a><br />
+            <a title="Air Hostess Jobs" href="#">Air Hostess Jobs</a><br />
+            <a title="Clerk Jobs" href="#">Clerk Jobs</a>
+          </div>
+          <div>
+            <a title="Oracle DBA Jobs" href="#">Oracle DBA Jobs</a><br />
+            <a title="Computer Operator Jobs" href="#">Computer Operator</a><br />
+            <a title="Librarian Jobs" href="#">Librarian Jobs</a><br />
+            <a title="Management Trainee Jobs" href="#">Management Trainee Jobs</a><br />
+            <a title="Pharmacist Jobs" href="#">Pharmacist Jobs</a>
+          </div>
+        </div>
+        <div class="browsefuncarea-last">
+          <a title="Veiw All Designations" href="#"
+            >Veiw All Designations</a
+          >
+        </div>
+      </div>
+      <!-- second div -->
+      <div>
+        <div id="browsefuncarea-first">
+          <p>Browse Jobs by Skills</p>
+        </div>
+        <div class="browsefuncarea-second">
+          <div>
+            <a title="Biotechnology Jobs" href="#">Biotechnology Jobs</a><br />
+            <a title="Software Testing Jobs" href="#">Software Testing Jobs</a><br />
+            <a title="Nnursing Jobs" href="#">Nnursing Jobs</a><br />
+            <a title="Networking Jobs" href="#">Networking Jobs</a><br />
+            <a title="Mainframe Jobs" href="#">Mainframe Jobs</a>
+          </div>
+          <div>
+            <a title="SAP Jobs" href="#">SAP Jobs</a><br />
+            <a title="Animation Jobs" href="#">Animation Job</a><br />
+            <a title="Net Jobs" href="#">Net Jobs</a><br />
+            <a title="Accounting Jobs" href="#">Accounting Jobs</a><br />
+            <a title="Oracle Jobs" href="#">Oracle Jobs</a>
+          </div>
+        </div>
+        <div class="browsefuncarea-last">
+          <a title="Veiw All Skills" href="#">Veiw All Skills</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="main">
+    
+        <marquee behavior="slide" direction="" width="70%" scrollamount="15"  loop="40" >
+         
+ <div id="moving">
+      <div>
+        <img src="https://img.naukimg.com/logo_images/v2/892542.gif" alt="">
+      </div>
+      <div>
+        <img src="https://img.naukimg.com/logo_images/v2/1384.gif" alt="">
+      </div>
+      <div>
+        <img src="https://img.naukimg.com/logo_images/v2/10081.gif" alt="">
+      </div>
+       <div>
+        <img src="https://img.naukimg.com/logo_images/v2/10081.gif" alt="">
+      </div>
+       <div>
+        <img src="https://img.naukimg.com/fc_images/v2/2114.gif" alt="">
+      </div>
+       <div>
+        <img src="https://img.naukimg.com/logo_images/v2/10081.gif" alt="">
+      </div>
+       <div>
+        <img src="https://img.naukimg.com/fc_images/v2/2114.gif" alt="">
+      </div>
+       <div>
+        <img src="https://img.naukimg.com/logo_images/v2/10081.gif" alt="">
+      </div>
+       <div>
+        <img src="https://img.naukimg.com/fc_images/v2/2114.gif" alt="">
+      </div>
+    </div>
+    </marquee>
+    
     </div>
   </body>
 </html>
