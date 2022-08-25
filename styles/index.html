@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <title>Jobs - Recruitment </title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #navbar {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5%;
+            /* align-items: center; */
+            color: #8292B4;
+            font-family: 'Inter', sans-serif;
+            box-shadow: rgba(86, 141, 187, 0.06) 0px 4px 12px 0px;
+        }
+
+        #logo {
+            margin-right: 50%;
+            height: 31px;
+            width: 186px;
+        }
+
+        #navbar div {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #navbar #mid_nav {
+            gap: 40px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 57px;
+            padding: 50px;
+            width: 70%;
+            left: 10%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            /* height: ; */
+            background-color: #ffffff;
+            border: 1px solid #D3E2EB;
+            border-radius: 10px;
+        }
+
+        .menu .row:nth-child(1){
+            padding-right: 30px;
+            border-right: 1px solid #D3E2EB;
+        }
+        .menu .row:nth-child(2){
+            padding-right: 30px;
+            border-right: 1px solid #D3E2EB;
+        }
+        .menu .row:nth-child(4){
+            padding-right: 30px;
+            padding-left: 10px;
+            border-left: 1px solid #D3E2EB;
+        }
+
+        /* .menu  
+            background-color: #ffffff;
+             padding: 25px 20px; 
+            display: flex; 
+            justify-content: space-evenly; 
+            width: 70%; 
+            margin: auto; 
+             height: auto; 
+            */
+
+        /* .row {
+            width: calc(25%-30px);
+        } */
+
+        .row .head {
+            font-size: 17px;
+            padding-bottom: 10px;
+            font-weight: 800;
+            color: black;
+            font-family: 'Inter', serif;
+        }
+        .menu-links{
+            padding-left: 0;
+            padding-right: 30px;
+
+        }
+        .row .menu-links p a {
+            /* padding: 0 20px; */
+            /* display: block; */
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .row .menu-links p {
+            padding-bottom: 15px;
+            /* margin: 10px; */
+        }
+
+        #mid_nav h3:hover .menu {
+            top: 57px;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease;
+        }
+
+
+
+        #navbar h3 {
+            font-size: 15px;
+        }
+
+        #vl {
+            height: 20px;
+            width: 0px;
+            border: 1px solid #D3E2EB;
+        }
+
+        #mid_nav {
+            margin-left: -20%;
+        }
+
+        #login {
+            color: #5086FF;
+            border: 1px solid #5086FF;
+            padding: 6px 18px;
+            border-radius: 40px;
+            /* font-size:20px; */
+        }
+
+        #register {
+            background-color: #FF7555;
+            color: white;
+            /* border: 1px solid #5086FF; */
+            padding: 6px 15px;
+            border-radius: 40px;
+        }
+
+        #register:hover,
+        #login:hover {
+            cursor: pointer;
+        }
+
+        #find {
+            margin: 52px 0 28px;
+            text-align: center;
+            font-size: 17px;
+            color: #1B2437;
+            /* font-family: 'Roboto', sans-serif; */
+            font-family: 'Roboto Slab', serif;
+        }
+        #find h1{
+            margin-bottom: 6px;
+        }
+        #find p{
+            color: #8292B4;
+            font-family: 'Inter', serif;
+            font-weight: 600;
+        }
+        #search{
+            width: 995px;
+            border: 1px solid #8292B4;
+            height: 68px;
+            margin: auto;
+            border-radius: 100px;
+            padding: 9px 9px 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div>
+            <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" id="logo">
+        </div>
+        <div id="mid_nav">
+            <h3>Jobs
+
+                <div class="menu">
+
+                    <div class="row">
+                        <ul class="menu-links">
+                            <p class="head">Popular categories</p>
+                            <p><a href="">IT jobs</a>
+                            </p>
+                            <p><a href="">Sales jobs</a>
+                            </p>
+                            <p><a href="">Marketing jobs</a>
+                            </p>
+                            <p><a href="">Data Science jobs</a>
+                            </p>
+                            <p><a href="">HR jobs</a>
+                            </p>
+                            <p><a href="">Engineering jobs</a>
+                            </p>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <ul class="menu-links">
+                            <p class="head">Jobs in demand</p>
+                            <p><a href="">Fresher jobs</a>
+                            </p>
+                            <p><a href="">MNC jobs</a>
+                            </p>
+                            <p><a href="">Remote jobs</a>
+                            </p>
+                            <p><a href="">Work from home jobs</a>
+                            </p>
+                            <p><a href="">Walk-in jobs</a>
+                            </p>
+                            <p><a href="">Part-time jobs</a>
+                            </p>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <ul class="menu-links">
+                            <p class="head"> Explore more jobs</p>
+                            <p><a href="">Jobs by category</a>
+                            </p>
+                            <p><a href="">Jobs by skill</a>
+                            </p>
+                            <p><a href="">Jobs by location</a>
+                            </p>
+                            <p><a href="">Jobs by designation</a>
+                            </p>
+                            <p><a href="">Create free job alert</a>
+                            </p>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <ul class="menu-links">
+                            <p class="head"> Jobs by location</p>
+
+                            <p><a href="">Jobs in Delhi</a>
+                            </p>
+                            <p><a href="">Jobs in Mumbai</a>
+                            </p>
+                            <p><a href="">Jobs in Bangalore</a>
+                            </p>
+                            <p><a href="">Jobs in Hyderabad</a>
+                            </p>
+                            <p><a href="">Jobs in Chennai</a>
+                            </p>
+                            <p><a href="">Jobs in Pune</a>
+                            </p>
+                        </ul>
+                    </div>
+
+                </div>
+            </h3>
+
+            <h3>Companies</h3>
+            <h3>Services</h3>
+            <h3>Resources</h3>
+
+        </div>
+
+        <div>
+            <h3 id="login">Login</h3>
+            <h3 id="register">Register</h3>
+            <div id="vl"></div>
+            <h3>For employers</h3>
+        </div>
+
+    </div>
+
+    <div id="find">
+        <h1>Find your dream job now</h1>
+        <p>5 lakh+ jobs for you to explore</p>
+    </div>
+
+    <div id="search">
+        <img src="https://static.naukimg.com/s/7/103/i/search.9ec0e1ac.svg" alt="">
+        <input type="text" placeholder="Enter skills / designations / companies">
+        <select id="">
+            <option value="">Fresher</option>
+            <option value="">1 year</option>
+            <option value="">2 years</option>
+            <option value="">3 years</option>
+            <option value="">4 years</option>
+            <option value="">5 years</option>
+            <option value="">more than 5 years</option>
+        </select>
+        <input type="text" placeholder="Enter location">
+        <button>Search</button>
+    </div>
+</body>
+
+</html>
