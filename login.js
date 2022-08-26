@@ -8,6 +8,7 @@ let login=()=>{
 
 
     if((checkdetail(email,password))===true){
+        
         logindata.push(user)
         localStorage.setItem("login_user",JSON.stringify(user))
         alert(`User Login Successfully`)
