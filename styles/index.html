@@ -160,7 +160,7 @@
             font-size: 17px;
             color: #1B2437;
             /* font-family: 'Roboto', sans-serif; */
-            font-family: 'Roboto Slab', serif;
+            font-family: 'Roboto Slab', serif; 
         }
         #find h1{
             margin-bottom: 6px;
@@ -172,11 +172,60 @@
         }
         #search{
             width: 995px;
-            border: 1px solid #8292B4;
-            height: 68px;
-            margin: auto;
+            /* border: 1px solid #9198a5; */
+            height: 60px;
             border-radius: 100px;
-            padding: 9px 9px 23px;
+            padding: 9px 9px 9px 24px;
+            margin:auto;
+            gap: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(86, 141, 187, 0.12) 0px 4px 12px 0px;
+        }
+        #sicon{
+            width: 26px;
+            height: 26px;            
+        }
+        #jInput{
+            width: 340px;
+            height: 46px;
+            padding: 4px 4px 4px 12px; 
+            border: none;
+            font-size: 17px;
+            font-family: 'Inter', sans-serif;
+            color: #8292B4;
+            font-weight: 700;
+        }
+        #Exp{
+            width: 223px;
+            height: 43px;
+            padding: 8px 0px 6px 10px; 
+            border: none;
+            font-size: 17px;
+            font-family: 'Inter', sans-serif;
+            color: #8292B4;
+            font-weight: 700;
+        }
+        #location{
+            width: 216px;
+            height: 38px;
+            padding: 8px 0px 6px 10px; 
+            border: none;
+            font-size: 17px;
+            font-family: 'Inter', sans-serif;
+            color: #8292B4;
+            font-weight: 700;
+        }
+        #srch{
+            width: 120px;
+            height: 48px;
+            font-size: 17px;
+            border-radius: 100px;
+            font-family: 'Inter', sans-serif;
+            color: #FFFFFF;
+            background-color: #457EFF;
+            box-shadow:rgba(86, 141, 187, 0.12) 0px 4px 12px 0px;
+            border: none;
         }
     </style>
 </head>
@@ -286,9 +335,12 @@
     </div>
 
     <div id="search">
-        <img src="https://static.naukimg.com/s/7/103/i/search.9ec0e1ac.svg" alt="">
-        <input type="text" placeholder="Enter skills / designations / companies">
-        <select id="">
+        
+        <img src="https://static.naukimg.com/s/7/103/i/search.9ec0e1ac.svg" alt="" id="sicon">
+        <input type="text" placeholder="Enter skills / designations / companies" id="jInput">
+        <select id="Exp">
+            <option value="">Select Experience</option>
+
             <option value="">Fresher</option>
             <option value="">1 year</option>
             <option value="">2 years</option>
@@ -297,8 +349,8 @@
             <option value="">5 years</option>
             <option value="">more than 5 years</option>
         </select>
-        <input type="text" placeholder="Enter location">
-        <button>Search</button>
+        <input type="text" placeholder="Enter location" id="location">
+        <button id="srch">Search</button>
     </div>
 </body>
 
