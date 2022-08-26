@@ -94,104 +94,64 @@ header {
 .navbar ul li:hover > ul {
   display: initial;
 }
-#search-section-detail {
+#nextnavbar {
   width: 100%;
-  height: 30px;
-  padding: 30px;
-  /* border: 1px solid red; */
+  height: 15%;
+  background: #d4e5ff;
 }
-#main-container {
+#main-details {
   width: 95%;
-  height:80vh;
-  margin: 5%;
+  height: 100vh;
+  border: 1px solid red;
   margin: auto;
-  margin-top: 20px;
+  margin-top: -40px;
   display: flex;
-  /* border: 1px solid red; */
   gap: 20px;
+  background: white;
 }
-
-#data-container {
-  width: 46%;
+#detail-job {
+  width: 65%;
   height: 100%;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* border: 1px solid purple; */
+  border: 1px solid red;
+  gap: 30px;
 }
-.sidebar {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 25%;
+#detail-comp {
+  width: 35%;
   height: 100%;
-  /* border: 1px solid green; */
+  border: 1px solid red;
 }
-#filterheading img {
-  width: 10%;
-  color: black;
+#job-details {
+  width: 100%;
+  height: 40%;
+  border: 1px solid red;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-.filterfirst {
+#roledetail {
+  width: 60%;
   display: flex;
-  align-items: center;
-  margin-left: 15px;
+  gap: 30px;
 }
-.filterfirst p {
-  margin-left: 15px;
-  color: black;
-  font-size: 14px;
-}
-/* Style the buttons that are used to open and close the accordion panel */
-
-#sidebar-first {
-  padding: 4px;
-  width: 95%;
-  height: 200px;
-  /* border: 2px solid red; */
-  margin: auto;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-top: 6px;
-}
-#first-div {
-  /* border: 2px solid red; */
+#educationdel {
   display: flex;
+  gap: 30px;
 }
-#first-div p,
-#sidebar-first > div + p {
-  font-size: 14px;
-}
-
-#first-div img {
-  width: 40%;
-}
-#rgnow {
-  margin-top: 10px;
-  width: 90%;
-  border: none;
-  background-color: orangered;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px 10px;
-  margin-left: 10px;
-}
-#second-div{
-     padding: 4px;
-  width: 95%;
-  height: 200px;
-  /* border: 2px solid red; */
-  margin: auto;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-top: 10px;
-}
-#second-div p{
-color: black;
-width: 75%;
-font-size: 15px;
-}
-#third-div{
-    margin-left: 20px;
-}
-#search-section-detail{
+.comp1 {
   border-bottom: 1px solid grey;
- color: #091e42;
-  font-weight: 500;
+}
+#detail-comp {
+  padding: 20px 20px;
+}
+#detail-comp div {
+  height: 25%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  gap: 30px;
+  padding: 20px;
+  background: white;
+  margin-bottom: 20px;
+}
+.comp1 p {
+  font-size: 14px;
+  margin-top: 10px;
 }

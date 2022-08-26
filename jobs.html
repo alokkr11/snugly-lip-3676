@@ -3,7 +3,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Browse Jobs by Company, Location, Skills, Designation & Industry - Naukri.com
+    </title>
+    <link rel="icon" type="image/x-icon" href="https://e7.pngegg.com/pngimages/373/665/png-clipart-naukri-com-employment-website-job-hunting-online-job-search-india-employment-thumbnail.png">
+
     <link rel="stylesheet" href="jobs.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -91,13 +94,18 @@
 
       <div id="search-input">
         <div id="search-job">
-          <input
+          <div>
+           <input
             type="text"
-            id="Skills"
+            id="Skills" 
             placeholder="Skills,Designations,Companies"
           />
+          <!-- oninput="debounce(1000,getData)" -->
+             <div id="container"></div>
+          </div>
+          
           <input type="text" id="location" placeholder="Location/Locality" />
-          <button id="search-data">Search</button>
+          <button id="search-data" >Search</button>
         </div>
         <div id="browse--by-jobs">
           <abbr title="All Jobs">All Jobs</abbr>
@@ -348,3 +356,4 @@
     </div>
   </body>
 </html>
+<script src="./Scripts/jobs.js"></script>
