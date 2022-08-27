@@ -1,4 +1,4 @@
-import { navBar } from "../Components/nav.js";
+import { navBar } from "../components/nav.js";
 document.getElementById("navbar").innerHTML = navBar();
 
 let data = JSON.parse(localStorage.getItem("job-div"));

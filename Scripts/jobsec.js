@@ -1,4 +1,4 @@
-import { navBar } from "../Components/nav.js";
+import { navBar } from "../components/nav.js";
 document.getElementById("navbar").innerHTML = navBar();
 
 var acc = document.getElementsByClassName("accordion");
