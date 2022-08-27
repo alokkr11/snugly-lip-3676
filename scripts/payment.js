@@ -188,7 +188,7 @@ box.append(p,input,div,button)
 let payment=()=>{
     let query=document.getElementById("intbox").value;
     if(query==""){
-        alert("Fill valied details")
+        alert("Fill valid details")
     }else{
         alert("Payment Successfull")
         window.location.href="./index.html"
