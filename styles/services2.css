@@ -481,3 +481,13 @@ margin-bottom: 30px;
        font-size: 12px;
        line-height: 20px;
     }
+    #already{
+        border: 3px solid rgb(90, 170, 204)
+    }
+    #bynowbutton:hover{
+ cursor: pointer;
+ font-size: 30px;
+
+    }
+
+    
