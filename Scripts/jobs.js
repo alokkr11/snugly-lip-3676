@@ -54,3 +54,12 @@ async function getData() {
 //     func();
 //   }, delay);
 // };
+
+async function fetchData(){
+    query = document.getElementById("Skills").value;
+  let res = await fetch(
+    `http://localhost:3000/api/job_Data/?title=${query}`
+  );
+  let data=await res.json();
+  console.log(data);
+}
