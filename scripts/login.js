@@ -36,3 +36,4 @@ let checkdetail=(email,password)=>{
 let register=()=>{
     window.location.href="./register.html"
 }
+

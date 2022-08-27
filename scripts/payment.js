@@ -38,6 +38,8 @@ let card=()=>{
     input.setAttribute("type","number")
 
     input.setAttribute("id","one")
+    input.setAttribute("required","")
+    input.required=true;
 
     let p1=document.createElement("p");
     p1.innerText="Card holder name"
@@ -107,22 +109,24 @@ let card=()=>{
 
 }
 
-let one=document.getElementById("one").value;
-let two=document.getElementById("two").value;
-let three=document.getElementById("three").value;
-let four=document.getElementById("four").value;
-let five=document.getElementById("five").value;
-
-
 let makepayment=()=>{
-    // let int1=document.getElementsByClassName("int").value
-    // console.log(int1)
-    if(one==null && two==null && three===null && four==null && five===null){
-        alert("Fill the card details")
-    }else{
-        alert("Payment Successfull")
+    
+    let one=document.getElementById("one").value;
+    let two=document.getElementById("two").value;
+    let three=document.getElementById("three").value;
+    let four=document.getElementById("four").value;
+    let five=document.getElementById("five").value;
+    console.log(one)
+    
+    if(one==null || one.length>16 || one.length<16 || two=="" || four.length>3 || four.length<3 || four==null|| three==""){
+        alert("Fill valid card details")
     }
-   
+    else{
+        alert("Payment Successfull")
+        window.location.href="./index.html"
+    }
+
+
 }
 
 
@@ -158,7 +162,7 @@ let upi=()=>{
     let input4=document.createElement("input");
    input4.setAttribute("type","checkbox");
 
-//    input4.setAttribute("id","int2")
+
 
    let p6=document.createElement("p");
    p6.innerText="I agree to Terms and Conditions, Privacy Statement. Naukri will automatically continue your subscription and charge the monthly membership fee to your payment method until you cancel. You may cancel your subscription at any time."
@@ -172,12 +176,22 @@ let upi=()=>{
    button.setAttribute("id","pay")
 
    button.onclick=()=>{
-    makepayment();
+    payment();
    }
 
 
 box.append(p,input,div,button)
 
 
+}
+
+let payment=()=>{
+    let query=document.getElementById("intbox").value;
+    if(query==""){
+        alert("Fill valied details")
+    }else{
+        alert("Payment Successfull")
+        window.location.href="./index.html"
+    }
 }
 
