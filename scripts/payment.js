@@ -37,13 +37,13 @@ let card=()=>{
     let input=document.createElement("input");
     input.setAttribute("type","number")
 
-    input.setAttribute("class","int")
+    input.setAttribute("id","one")
 
     let p1=document.createElement("p");
     p1.innerText="Card holder name"
     let input1=document.createElement("input");
 
-    input1.setAttribute("class","int")
+    input1.setAttribute("id","two")
 
 
     let p3=document.createElement("p");
@@ -51,7 +51,7 @@ let card=()=>{
     let input2=document.createElement("input");
     input2.setAttribute("type","month")
 
-    input2.setAttribute("class","int")
+    input2.setAttribute("id","three")
    
     let p4=document.createElement("p");
     p4.innerText="CVV"
@@ -62,7 +62,7 @@ let card=()=>{
     let input3=document.createElement("input");
     input3.setAttribute("type","number")
 
-    input3.setAttribute("class","int")
+    input3.setAttribute("id","four")
     
     let img=document.createElement("img");
     img.src="https://static.naukimg.com/s/7/123/i/cvv.30afa5f9.png"
@@ -80,7 +80,7 @@ let card=()=>{
    let input4=document.createElement("input");
    input4.setAttribute("type","checkbox");
 
-   input4.setAttribute("class","int")
+   input4.setAttribute("id","five")
 
    let p6=document.createElement("p");
    p6.innerText="I agree to Terms and Conditions, Privacy Statement. Naukri will automatically continue your subscription and charge the monthly membership fee to your payment method until you cancel. You may cancel your subscription at any time."
@@ -107,12 +107,17 @@ let card=()=>{
 
 }
 
+let one=document.getElementById("one").value;
+let two=document.getElementById("two").value;
+let three=document.getElementById("three").value;
+let four=document.getElementById("four").value;
+let five=document.getElementById("five").value;
 
-// card();
 
 let makepayment=()=>{
-    let int1=document.getElementsByClassName("int").value;
-    if(int1.length==0){
+    // let int1=document.getElementsByClassName("int").value
+    // console.log(int1)
+    if(one==null && two==null && three===null && four==null && five===null){
         alert("Fill the card details")
     }else{
         alert("Payment Successfull")

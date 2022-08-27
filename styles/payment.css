@@ -69,6 +69,7 @@
 }
 #button>button{
     height:40px;
+    margin-top: 10px;
 }
 #card{
     background-color: white;
