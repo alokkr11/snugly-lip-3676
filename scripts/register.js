@@ -20,6 +20,8 @@ let register=()=>{
         window.location.href="./login.html"
         user_data.push(user);
 
+    }else if(name==""||email==""||password.length>6|| password.length<6 ||password==null || number.length>10 ||number.length<10 ||number==null){
+         alert("Fill valid details")
     }else{
         alert("user already exist")
         window.location.href="./login.html"

@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+}
+body {
+  min-height: 100vh;
+  color: #666;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #fff;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1000;
+}
+.logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: red;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  position: relative;
+  float: left;
+}
+.navbar ul li a {
+  font-size: 12px;
+  padding: 20px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #666;
+  display: block;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
+  /* text-decoration-style: wavy; */
+  text-decoration-thickness: 4px;
+  color: blue;
+  font-weight: bold;
+  background: rgba(128, 128, 128, 0.164);
+  /* color: black; */
+}
+.navbar ul li:hover {
+  /* text-decoration-style: wavy; */
+  text-decoration-thickness: 4px;
+  font-weight: bold;
+  background: white;
+}
+.navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  padding: 20px 5px 20px 0px;
+  background: white;
+  display: none;
+}
+.navbar ul li ul a {
+  font-weight: 400;
+  text-transform: none;
+  padding: 5px;
+  text-decoration: none;
+}
+.navbar ul li ul a:hover {
+  background: none;
+  font-weight: 400;
+  color: rgba(0, 119, 255, 0.658);
+  text-decoration: none;
+}
+.navbar ul li ul li {
+  width: 100%;
+}
+
+.navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul {
+  display: initial;
+}
+#nextnavbar {
+  width: 100%;
+  height: 15%;
+  background: #d4e5ff;
+}
+#main-details {
+  width: 95%;
+  height: 100vh;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: -40px;
+  display: flex;
+  gap: 20px;
+  background: white;
+  gap:20px;
+
+}
+#detail-job {
+  width: 65%;
+  height: 100%;
+  /* border: 1px solid red; */
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+   border-right: 1px solid grey;
+}
+#detail-comp {
+  width: 35%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+#job-details {
+  width: 100%;
+  height: 40%;
+ 
+  /* border: 1px solid red; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+#job-details p{
+  font-size: 14px;
+margin-top: 4px;
+}
+#roledetail {
+  width: 60%;
+  display: flex;
+  gap: 30px;
+}
+#educationdel {
+  display: flex;
+  gap: 30px;
+}
+.comp1 {
+  border-bottom: 1px solid grey;
+}
+#detail-comp {
+  padding: 20px 20px;
+}
+#detail-comp div {
+  height: 25%;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+  gap: 30px;
+  padding: 20px;
+  background: white;
+  margin-bottom: 20px;
+}
+.comp1 p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+#job-details-sec{
+  font-size: 14px;
+  padding: 20px;
+   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+#job-details-sec>div{
+  margin-bottom: 20px;
+}
+#descmain{
+  padding: 30px;
+  font-size: 14px;
+}
+#descmain p{
+  font-size: 14px;
+}
+#jobdesc{
+   font-size: 14px;
+}
