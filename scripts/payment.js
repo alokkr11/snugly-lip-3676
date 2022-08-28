@@ -123,7 +123,7 @@ let makepayment=()=>{
     }
     else{
         alert("Payment Successfull")
-        window.location.href="./index.html"
+        window.location.href="./jobs.html"
     }
 
 
@@ -191,7 +191,7 @@ let payment=()=>{
         alert("Fill valid details")
     }else{
         alert("Payment Successfull")
-        window.location.href="./index.html"
+        window.location.href="./jobs.html"
     }
 }
 

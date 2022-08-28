@@ -1,7 +1,7 @@
 let navBar=()=>{
     return `
      <header>
-      <a class="nLogo f1" href="https:wwww.naukri.com">
+      <a class="nLogo f1" href="jobs.html">
         <img
           src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
           alt=""
@@ -26,7 +26,7 @@ let navBar=()=>{
             </ul>
           </li>
           <li>
-            <a href="#">comapnies</a>
+            <a href="#">companies</a>
             <ul>
               <li><a href="#">Browse All Companies</a></li>
               <li><a href="#">About Companies</a></li>
@@ -34,7 +34,7 @@ let navBar=()=>{
               <li><a href="#">Write Company Review</a></li>
               <li><a href="#">Write Interview Advice</a></li>
               <li><a href="#">Company Reviews</a></li>
-              <li><a href="#">Comapny Salaries</a></li>
+              <li><a href="#">Company Salaries</a></li>
             </ul>
           </li>
           <li>
@@ -46,9 +46,9 @@ let navBar=()=>{
               <li><a href="#">Naukri Lab</a></li>
             </ul>
           </li>
-          <li><a href="#">services</a></li>
+          <li><a href="services1.html">services</a></li>
           <li><a href="#">more</a></li>
-          <li><a href="#">login</a></li>
+          <li><a href="#"></a></li>
           <li>
             <i
               class="material-icons"

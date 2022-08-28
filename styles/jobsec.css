@@ -211,3 +211,18 @@ font-size: 15px;
 #com{
   padding: 20px;
 }
+
+#com p:hover{
+  cursor: pointer;
+  color:#2e6df3;
+  font-weight: 600;
+}
+
+#location p:hover{
+  cursor: pointer;
+  color: #326ff1;
+  font-weight: 600;
+}
+#data-container>div:hover{
+  cursor: pointer;
+}
