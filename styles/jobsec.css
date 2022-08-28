@@ -115,11 +115,11 @@ header {
   width: 46%;
   height: 100%;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   /* border: 1px solid purple; */
 }
 .sidebar {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   width: 25%;
   height: 100%;
   /* border: 1px solid green; */
@@ -146,7 +146,7 @@ header {
   height: 200px;
   /* border: 2px solid red; */
   margin: auto;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin-top: 6px;
 }
 #first-div {
@@ -179,7 +179,7 @@ header {
   height: 200px;
   /* border: 2px solid red; */
   margin: auto;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin-top: 10px;
 }
 #second-div p{
