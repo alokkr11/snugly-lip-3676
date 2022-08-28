@@ -13,4 +13,12 @@ document.getElementById("gst").innerText=gst;
 
 document.getElementById("estimate").innerText=estimate;
 
+let pay=()=>{
+    window.location.href="./payment.html"
+}
+
+let shop=()=>{
+    window.location.href="./services1.html"
+}
+
 

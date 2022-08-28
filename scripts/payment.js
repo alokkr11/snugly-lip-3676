@@ -3,7 +3,7 @@ window.addEventListener("load",()=>{
     card();
 })
 
-let total=625
+let total=601
 
 let discount=total*(20/100)
 
