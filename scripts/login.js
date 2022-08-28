@@ -12,7 +12,7 @@ let login=()=>{
         logindata.push(user)
         localStorage.setItem("login_user",JSON.stringify(user))
         alert(`User Login Successfully`)
-        window.location.href="./index.html"
+        window.location.href="./jobs.html"
     }else{
         alert("Invalid Email and Password")
     }
