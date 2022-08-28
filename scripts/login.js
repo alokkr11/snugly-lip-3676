@@ -14,7 +14,7 @@ let login=()=>{
         alert(`User Login Successfully`)
         window.location.href="./index.html"
     }else{
-        alert("Invailed Email and Password")
+        alert("Invalid Email and Password")
     }
 
     document.getElementById("email").value=null;
@@ -36,3 +36,4 @@ let checkdetail=(email,password)=>{
 let register=()=>{
     window.location.href="./register.html"
 }
+
