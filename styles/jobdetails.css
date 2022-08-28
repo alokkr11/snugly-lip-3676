@@ -102,30 +102,40 @@ header {
 #main-details {
   width: 95%;
   height: 100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: auto;
   margin-top: -40px;
   display: flex;
   gap: 20px;
   background: white;
+  gap:20px;
+
 }
 #detail-job {
   width: 65%;
   height: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   gap: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+   border-right: 1px solid grey;
 }
 #detail-comp {
   width: 35%;
   height: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 #job-details {
   width: 100%;
   height: 40%;
-  border: 1px solid red;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ 
+  /* border: 1px solid red; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+#job-details p{
+  font-size: 14px;
+margin-top: 4px;
 }
 #roledetail {
   width: 60%;
@@ -144,8 +154,8 @@ header {
 }
 #detail-comp div {
   height: 25%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
   gap: 30px;
   padding: 20px;
   background: white;
@@ -154,4 +164,23 @@ header {
 .comp1 p {
   font-size: 14px;
   margin-top: 10px;
+}
+#job-details-sec{
+  font-size: 14px;
+  padding: 20px;
+   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+#job-details-sec>div{
+  margin-bottom: 20px;
+}
+#descmain{
+  padding: 30px;
+  font-size: 14px;
+}
+#descmain p{
+  font-size: 14px;
+}
+#jobdesc{
+   font-size: 14px;
 }

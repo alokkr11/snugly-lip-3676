@@ -1,29 +1,46 @@
 let query;
 let loc;
 let result = false;
+let data=[];
 document.getElementById("search-data").addEventListener("click", () => {
   getData();
   console.log(result);
-  if (result == false) {
-    window.location.href = "./jobsec.html";
-  }
+ 
+  document.getElementById("Skills").value = "";
+  document.getElementById("location").value = "";
+
 });
 async function getData() {
-  query = document.getElementById("Skills").value;
+ query = document.getElementById("Skills").value;
   loc = document.getElementById("location").value;
-  if (query == "" || loc == "") {
+  if (query == "") {
     alert("Something going wrong search again!!!");
     result = true;
     return;
   }
-  //   let url = `https://swapi.dev/api/people/?search=${query}`;
-  let url = `http://localhost:3000/api/job_Data/?title=${query}&&location=${loc}`;
-  let res = await fetch(url);
+  if (loc == "") {
+    let url = `https://vast-falls-97578.herokuapp.com/api/job_Data?title=${query}`;
+    let res = await fetch(url);
 
-  let data = await res.json();
-  localStorage.setItem("jobs-data", JSON.stringify(data));
-  console.log(data);
-  //append(data);
+     data = await res.json();
+    console.log(data);
+    localStorage.setItem("jobs-data", JSON.stringify(data));
+     window.location.href = "jobsec.html";
+    console.log(data);
+  } else {
+    let url = `https://vast-falls-97578.herokuapp.com/api/job_Data?title=${query}&&location=${loc}`;
+    let res = await fetch(url);
+
+     data = await res.json();
+    console.log(data);
+    localStorage.setItem("jobs-data", JSON.stringify(data));
+    window.location.href = "jobsec.html";
+    console.log(data);
+    //append(data);
+  }
+  // document.getElementById("Skills").value = "";
+  // document.getElementById("location").value = "";
+  //   let url = `https://swapi.dev/api/people/?search=${query}`;
 }
 //getData();
 

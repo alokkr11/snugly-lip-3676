@@ -102,7 +102,7 @@ header {
 }
 #main-container {
   width: 95%;
-  height:80vh;
+
   margin: 5%;
   margin: auto;
   margin-top: 20px;
@@ -194,4 +194,20 @@ font-size: 15px;
   border-bottom: 1px solid grey;
  color: #091e42;
   font-weight: 500;
+}
+#location p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+#location{
+  padding: 20px;
+}
+#com p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+#com{
+  padding: 20px;
 }

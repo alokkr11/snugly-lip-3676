@@ -43,7 +43,7 @@ comp.innerText = data.comapany;
    div3.style = "display:flex;gap:10px;";
    let apply=document.createElement("button");
   apply.innerText="Apply";
-  apply.style="background:green;padding:8px 30px;border:none;border-radius:8px;color:white;font-size:18px;"
+  apply.style="background:green;padding:8px 30px;border:none;border-radius:8px;color:white;font-weight:bold;margin-top:20px;text-transform:uppercase;"
   
   apply.onclick=()=>{
     alert(`Successfully appplied for ${data.title}`);
